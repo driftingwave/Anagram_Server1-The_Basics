@@ -1,0 +1,16 @@
+<div class="container">
+  <h1> Anagrams R Us! </h1>
+
+  <% if @lead_word %>
+    <p>Here are the anagrams for "<span id="lead_word"><%= @lead_word %></span>":</p>
+  <% end %>
+
+  <form action="/word_entered" method="post">
+    Enter a word:
+    <br>
+    <input type="text" name="lead_word">
+    <input type="submit" value="Go!">    
+  </form>
+
+</div>
+
